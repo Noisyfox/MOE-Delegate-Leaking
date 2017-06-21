@@ -18,8 +18,8 @@ bin
 *.iws
 
 # Xcode user specific data
-*.xcodeproj/project.xcworkspace/xcuserdata/
-*.xcodeproj/xcuserdata/
+xcode/*.xcodeproj/project.xcworkspace/xcuserdata/
+xcode/*.xcodeproj/xcuserdata/
 
 # Mac Finder
 .DS_Store
