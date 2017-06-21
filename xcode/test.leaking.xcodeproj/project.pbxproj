@@ -10,6 +10,8 @@
 		555F5DD11EF8B00900E38BE4 /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5DD01EF8B00900E38BE4 /* BrowserViewController.m */; };
 		555F5DD41EF8B03A00E38BE4 /* AppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5DD31EF8B03A00E38BE4 /* AppViewController.m */; };
 		555F5DD71EF8B74700E38BE4 /* BrowserUnsafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5DD61EF8B74700E38BE4 /* BrowserUnsafeViewController.m */; };
+		555F5DDA1EF90A8200E38BE4 /* CycleRefViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5DD91EF90A8200E38BE4 /* CycleRefViewController.m */; };
+		555F5DDD1EF90BF200E38BE4 /* CycleRefView.m in Sources */ = {isa = PBXBuildFile; fileRef = 555F5DDC1EF90BF200E38BE4 /* CycleRefView.m */; };
 		58C6F5321DA66CB600309CB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58C6F5301DA66CB600309CB6 /* Main.storyboard */; };
 		58C6F5341DA66CB600309CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C6F5331DA66CB600309CB6 /* Assets.xcassets */; };
 		58C6F5371DA66CB600309CB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58C6F5351DA66CB600309CB6 /* LaunchScreen.storyboard */; };
@@ -27,6 +29,10 @@
 		555F5DD31EF8B03A00E38BE4 /* AppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppViewController.m; sourceTree = "<group>"; };
 		555F5DD51EF8B74700E38BE4 /* BrowserUnsafeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserUnsafeViewController.h; sourceTree = "<group>"; };
 		555F5DD61EF8B74700E38BE4 /* BrowserUnsafeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserUnsafeViewController.m; sourceTree = "<group>"; };
+		555F5DD81EF90A8200E38BE4 /* CycleRefViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleRefViewController.h; sourceTree = "<group>"; };
+		555F5DD91EF90A8200E38BE4 /* CycleRefViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleRefViewController.m; sourceTree = "<group>"; };
+		555F5DDB1EF90BF200E38BE4 /* CycleRefView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleRefView.h; sourceTree = "<group>"; };
+		555F5DDC1EF90BF200E38BE4 /* CycleRefView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleRefView.m; sourceTree = "<group>"; };
 		5863B87B1DA682C800E46B6A /* test.leaking-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test.leaking-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5863B88E1DA682C800E46B6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58C6F5241DA66CB600309CB6 /* test.leaking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.leaking.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +70,10 @@
 				555F5DD31EF8B03A00E38BE4 /* AppViewController.m */,
 				555F5DD51EF8B74700E38BE4 /* BrowserUnsafeViewController.h */,
 				555F5DD61EF8B74700E38BE4 /* BrowserUnsafeViewController.m */,
+				555F5DD81EF90A8200E38BE4 /* CycleRefViewController.h */,
+				555F5DD91EF90A8200E38BE4 /* CycleRefViewController.m */,
+				555F5DDB1EF90BF200E38BE4 /* CycleRefView.h */,
+				555F5DDC1EF90BF200E38BE4 /* CycleRefView.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -277,6 +287,8 @@
 				555F5DD41EF8B03A00E38BE4 /* AppViewController.m in Sources */,
 				555F5DD11EF8B00900E38BE4 /* BrowserViewController.m in Sources */,
 				59481B027B527A730E34B813 /* moe-main-interfaces.m in Sources */,
+				555F5DDD1EF90BF200E38BE4 /* CycleRefView.m in Sources */,
+				555F5DDA1EF90A8200E38BE4 /* CycleRefViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

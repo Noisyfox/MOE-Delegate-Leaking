@@ -22,23 +22,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7T-at-5WO">
-                                <rect key="frame" x="150" y="279" width="75" height="30"/>
+                                <rect key="frame" x="150" y="140" width="75" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Navigate"/>
+                                <state key="normal" title="Delegate"/>
                                 <connections>
                                     <segue destination="3oQ-Xl-0Ro" kind="show" id="XAT-X5-y8e"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaA-BB-Aae">
-                                <rect key="frame" x="116" y="310" width="143" height="30"/>
+                                <rect key="frame" x="116" y="171" width="143" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Navigate Unsafe"/>
+                                <state key="normal" title="Delegate Unsafe"/>
                                 <connections>
                                     <segue destination="P6U-qV-LIj" kind="show" id="a1f-Fm-f61"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqP-UB-3eI">
-                                <rect key="frame" x="143" y="415" width="88" height="30"/>
+                                <rect key="frame" x="143" y="520" width="88" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Dump Heap"/>
                                 <connections>
@@ -46,11 +46,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Er3-ld-Dbl">
-                                <rect key="frame" x="150" y="377" width="75" height="30"/>
+                                <rect key="frame" x="150" y="482" width="75" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Force GC"/>
                                 <connections>
                                     <action selector="forceGCAction:" destination="u6M-Z9-y7p" eventType="touchUpInside" id="bYe-3F-m8o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebX-qy-sUO">
+                                <rect key="frame" x="154" y="209" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cycle Ref"/>
+                                <connections>
+                                    <segue destination="AZA-rl-CG2" kind="show" id="BBj-On-SeX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,6 +69,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ALG-PR-N24" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="308" y="-20.239880059970016"/>
+        </scene>
+        <!--Cycle Ref-->
+        <scene sceneID="fqx-ip-xZ1">
+            <objects>
+                <viewController id="AZA-rl-CG2" customClass="CycleRefViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nv8-bB-f4M"/>
+                        <viewControllerLayoutGuide type="bottom" id="DmX-Sz-e0M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ecg-23-wq6" customClass="CycleRefView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cycle Ref" id="XpM-2B-Jxe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wrj-xd-rFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="825"/>
         </scene>
         <!--setDelegate()-->
         <scene sceneID="LvI-At-xyt">
@@ -94,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2si-B9-Za2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1306" y="-8"/>
+            <point key="canvasLocation" x="1260" y="-20"/>
         </scene>
         <!--setDelegate_unsafe()-->
         <scene sceneID="FSA-Ue-00B">
@@ -128,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSx-mt-v8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="301" y="755"/>
+            <point key="canvasLocation" x="1970" y="-20"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Uv4-pG-T1A">
